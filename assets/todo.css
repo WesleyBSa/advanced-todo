@@ -1,0 +1,105 @@
+/* nanoscrollbar */
+.nano .pane   { background: #888; }
+.nano .slider { background: #111; }
+
+body {
+    /* Override bootstrap properties */
+    background-color: #17011af8 !important;
+    border: 0 !important;
+}
+
+#container{
+    margin: 0 auto;
+    width: 1440px;
+    min-height: 100%;
+    background-color: transparent;
+}
+
+#header{
+    font-size: 40px;
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+#task-inp {
+    margin-right: 80px;
+    border: 4px solid #8d046b;
+    min-height: 320px;
+}
+
+.task-list{
+    width: 250px;
+    float: right;
+    margin: 0 10px;
+    background-color: #e3e3e3;
+    box-shadow: 5px 8px #a00379;
+    min-height: 240px;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.task-list input, .task-list textarea{
+    width: 225px;
+    margin: 1px 5px;    
+    border: 1px solid #ff11c3;
+    resize: none;
+}
+
+.task-list input{
+    height: 30px;
+}
+
+.todo-task{
+    border-radius: 5px;
+    background-color: #fbccff;
+    width: 230px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.task-list input[type="button"]{
+    width: 100px;
+    margin: 5px;
+}
+
+.todo-task > .task-header{
+    font-weight: bold;
+}
+
+.todo-task > .task-date{
+    font-size: small;
+    font-style: italic;
+}
+
+.todo-task > .task-description{
+    font-size: smaller;
+}
+
+h3{
+    text-align: center;
+}
+
+#delete-div{
+    display: none;
+    background-color: #fff;
+    border: 3px dotted #000;
+    margin: 10px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.completed-task {
+    background-color: #aaffaa;
+}
+
+.inprogress-task {
+    background-color: rgb(240, 240, 109);
+}
+
+.pending-task {
+    background-color: #fbccff;
+}

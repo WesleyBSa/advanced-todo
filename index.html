@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<title>Lista de Tarefas</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="lib/Bootstrap/bootstrap.min.css" />
+<link rel="stylesheet" href="lib/jQuery/jquery.ui.min.css" />
+<link rel="stylesheet" href="assets/todo.css" />
+</head>
+
+<body class="well">
+    <div id="container">
+
+        <div id="header"> LISTA &nbsp DE &nbsp TAREFAS </div>
+
+        <div class="task-list task-container" id="completed">
+            <h3>Completo</h3>
+        </div>
+
+        <div class="task-list task-container" id="inProgress">
+            <h3>Em andamento</h3>
+        </div>
+
+        <div class="task-list task-container" id="pending">
+            <h3>Pendente</h3>
+            <!--<div class="todo-task">
+                    <div class="task-header">Exemplo de cabeçalho</div>
+                    <div class="task-date">01/01/1990</div>
+                    <div class="task-description">Exemplo de descrição</div>
+                </div>-->
+        </div>
+
+
+        <div class="task-list" id="task-inp">
+            <h3>Adicionar Tarefa</h3>
+            <form id="todo-form">
+                <input type="text" placeholder="Titulo" />
+                <textarea placeholder="Descrição"></textarea>
+                <input type="text" id="datepicker" placeholder="Data (dd/mm/aaaa)" />
+                <input type="button" class="btn btn-primary" value="Adicionar" onclick="todo.add();" />
+            </form>
+
+            <input type="button" class="btn btn-primary" value="Limpar" onclick="todo.clear();" />
+
+            <div id="delete-div">
+                Arraste aqui para excluir
+            </div>
+        </div>
+
+        <div style="clear:both;"></div>
+        <script type="text/javascript" src="lib/jQuery/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/Bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/jQuery/jquery.ui.min.js"></script>
+        <script type="text/javascript" src="assets/todo.js"></script>
+
+        <script type="text/javascript">
+            $("#datepicker").datepicker();
+            $("#datepicker").datepicker("option", "dateFormat", "dd/mm/yy");
+
+            $(".task-container").droppable();
+            $(".todo-task").draggable({ revert: "valid", revertDuration: 200 });
+            todo.init();
+        </script>
+
+    </div>
+</body>
+
+</html>
