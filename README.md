@@ -1,4 +1,4 @@
-**📋 Lista de tarefas**
+**📋 Lista de Tarefas**
 
 ### Descrição
 Este projeto é uma simples aplicação de lista de tarefas desenvolvida utilizando JavaScript, HTML, CSS, Bootstrap e jQuery.
@@ -11,11 +11,11 @@ Este projeto é uma simples aplicação de lista de tarefas desenvolvida utiliza
 - Limpar todas as tarefas concluídas.
 
 ### Tecnologias Utilizadas
-- **JavaScript** 📜
-- **HTML** 🌐
-- **CSS** 🎨
-- **Bootstrap** 🅱️
-- **jQuery** 📦
+- **JavaScript** ![JavaScript Logo](https://img.icons8.com/color/48/000000/javascript.png)
+- **HTML** ![HTML Logo](https://img.icons8.com/color/48/000000/html-5.png)
+- **CSS** ![CSS Logo](https://img.icons8.com/color/48/000000/css3.png)
+- **Bootstrap** ![Bootstrap Logo](https://img.icons8.com/color/48/000000/bootstrap.png)
+- **jQuery** ![jQuery Logo](https://img.icons8.com/ios-filled/50/000000/jquery.png)
 
 ### Instruções de Uso
 1. Clone o repositório: `git clone https://github.com/WesleyBSa/advanced-todo`
@@ -41,7 +41,8 @@ Este projeto é uma simples aplicação de lista de tarefas desenvolvida utiliza
 ```
 
 ### Preview
-![Preview da Aplicação](C:\Users\GrupoLA\Downloads\to-do-list-master\visual.png)
+![Preview da Aplicação](visual.png)
+
 
 ### Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests.
